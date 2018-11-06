@@ -1,0 +1,63 @@
+<!-- Denne siden er sist endret 23.05.2018 av Ole
+Denne siden ble kontrollert 01.06.2018 av Hamta -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WeSpeaks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale 1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/General.css">
+</head>
+
+<body>
+<header class="topbar">
+    <form class='topbar-form' method="POST" action="../Funksjoner/LoggUt.php">
+        <a href="../hjem.php"><img src="../Bilder/logo.png" class="bildet" alt="Bilde av logo"></a>
+        <div class='action-buttons-container'>
+            <a href="../profilside.php"><p id="mineSider">Mine sider</p></a>
+            <button name="LoggUt" value="LoggUt" class='action-buttons button button--primary'>Logg ut</button>
+        </div>
+    </form>
+</header>
+
+<div id="menyElement">
+    <label for="toggle"><img src="../Bilder/hamburgermeny.png" id="hamburgeren" alt="Hamburgermeny"></label>
+    <!--"Hamburgerknapp løsning for mobile enheter ved bruk av checkbox typen -->
+    <!--Laget av Jan-->
+    <!--Kontrollert av Ole-->
+    <input type="checkbox" id="responsivMeny"/>
+    <label for="responsivMeny"></label>
+    <nav class="meny">
+        <ul class="pc">
+			<li>
+				<a href="../hjem.php">Hjem</a>
+				<a href="../arrangement.php">Arrangementer</a>
+				<a href="../Sosialt.php">Sosialt</a>
+				<a href="../profilside.php">Mine sider</a>
+			</li>
+		</ul>
+    </nav>
+</div>
+<div id='reglene'><h1 id='reglerWS'>Regler for bruk av WeSpeaks</h1><pre id="regler">Misbruk av nettstedet vil bli rapportert til administratorer.
+Brukernavn og passord er personlig informasjon og skal ikke deles med andre.
+
+</pre></div></body><!-- Denne siden er utviklet av Jan, siste gang endret 10.02.2017
+     Denne siden er kontrollert av Ketil og Hamta, siste gang endret 23.02.2018-->
+
+<footer>
+	<a href="../rapporterBruker.php">Rapporter en bruker</a>
+    <div class="divFelt">
+        <a target="_blank" href="https://www.usn.no/?lang=no_NO">
+            <img src="../Bilder/Hsn.png" alt="Skolen" width="50" height="50">
+        </a>
+        <a target="_blank" href="https://www.ssn.no/?lang=no_NO">
+            <img src="../Bilder/SSn.png" alt="StudentSam" width="50" height="50">
+        </a>
+        <a target="_blank" href="https://fsweb.no/studentweb/velgInstitusjon.jsf">
+            <img src="../Bilder/StudentWeb.png" alt="StudentWeb" width="50" height="50">
+        </a>
+    </div>
+
+    <a href="regler.html">Regler for bruk av WeSpeaks</a>
+</footer></html>

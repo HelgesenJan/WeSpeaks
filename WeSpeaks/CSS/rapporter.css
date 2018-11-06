@@ -1,0 +1,183 @@
+/*Denne siden er sist endret 26.05.2018 av Ole
+Denne siden ble kontrollert 01.06.2018 av Ketil*/
+h1#overskriften{
+	background-color: black;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 32px;
+	}
+div#container{
+	background-color: #353f40;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid white;
+	}
+form#velgRapport{
+	margin-right: auto;
+	margin-left: auto;
+	width: 665px;
+	}
+div#scroll{
+	max-height: 450px;
+	overflow: auto;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+	}
+table#rapport{
+	width: 100%;
+	background-color: white;
+	color: black;
+	border-radius: 3px;
+	border-collapse: collapse;
+	border: 2px solid black;
+	}
+table#rapport td, table#rapport th{
+	padding: 7px;
+	border: 2px solid black;
+	border-collapse: collapse;
+	}
+table#rapport tbody{
+	padding: 0px;
+	}
+button#knappen{
+	padding: 8px;
+	border-radius: 5px;
+	background-color: orange;
+	}
+select{
+	background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    border-radius:20px;
+    font-size: 16px;
+    width:150px;
+	}
+button.knapp{
+	float: none;
+	padding: 2px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: block;
+	}
+select#sorterArr, select#sorterKarant, select#sorterNyhet{
+	display: none;
+	}
+
+/* PC Styling */
+@media screen and (min-width: 850px){
+button.knapp{
+	margin-left: auto;
+	margin-right: auto;
+	}
+div#container{
+	min-width: 800px;
+	width: 70%;
+	height: 630px;
+	}
+select{
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-right: 20px;
+	}
+p.tekst{
+	display: inline-block;	
+	}
+button#knappen{
+	margin-top: 30px;
+	margin-right: 30px;
+	}
+}
+
+/* Nettbrett styling */
+@media screen and (min-width: 450px) and (max-width: 850px) {
+table#rapport thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+	}  
+table#rapport tr {
+    display: block;
+	border-bottom: 3px solid black;
+	}
+table#rapport td {
+    display: block;
+    font-size: 16px;
+    text-align: right;
+	height: 25px;
+	}
+table#rapport td::before {
+    content: attr(data-label);
+	margin-left: 20px;
+    float: left;
+    font-weight: bold;
+	margin-top: 2px;
+    text-transform: uppercase;
+	}
+button.knapp{
+	margin-left: auto;
+	margin-right: 0px;
+	}
+p.tekst{
+	margin-top: 15px;
+	}
+div#container{
+	width: 95%;
+	height: 720px;
+	}
+form#velgRapport{
+	width: 310px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+button#knappen{
+	margin-left: 20px;
+	}
+}
+
+
+/* Mobil styling */
+@media screen and (max-width: 449px){
+table#rapport thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+	}  
+table#rapport tr {
+    display: block;
+	border-bottom: 3px solid black;
+	}
+table#rapport td {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+	height: 25px;
+	}
+button.knapp{
+	margin-left: auto;
+	margin-right: auto;
+	}
+p.tekst{
+	margin-top: 15px;
+	}
+div#container{
+	width: 95%;
+	min-width: 290px;
+	height: 720px;
+	}
+form#velgRapport{
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+}

@@ -1,0 +1,249 @@
+/*Denne siden er sist endret 24.05.2018 av Jan
+Denne siden ble kontrollert 01.06.2018 av Ketil*/
+
+html, body {
+	height: 100%;
+	}
+article	{
+	margin-top: 20px;
+	}
+div.arrangementHolder{
+	width: auto;
+}
+div.arrangementBakgrunn{
+	margin-top: 20px;
+	font-family: arial, sans-serif;
+	background-color: #353f40;
+	border-radius: 30px;
+	padding: 15px;
+	height: 220px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+article	{
+	margin-top: 20px;
+	font-family: arial, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+	width: 76%;
+	}
+.Oppretting{
+	text-align: left;
+	margin-left:auto;
+}
+table.excl	{
+	background-color: #353f40;
+	border-collapse: separate;
+	border-color:#5c5a5a;
+	width: 76%;
+	border-radius: 30px;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 10px;
+	display: block;
+	}
+div.sentrering{
+	width: auto;
+}
+
+input#viddeKnappene{
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}
+
+
+
+
+div.arrStedTid{
+	float: left;
+	width: 30%;
+}
+
+
+div.beskOpp{
+	float: right;
+	width: 65%;
+}
+.arrangementFelt{
+	border-radius: 3px;
+	font-family: arial, sans-serif;
+	height: 40px;
+	width: 100%;
+	margin-left:auto;
+	margin-top: 10px;
+	vertical-align: top;
+	border: none;
+	resize: none;
+}
+textarea.arrangementBeskrivelse{
+	border-radius: 3px;
+	font-family: arial, sans-serif;
+	height: 140px;
+	width: 100%;
+	margin-left:auto;
+	margin-top: 10px;
+	vertical-align: top;
+	border: none;
+	resize: none;
+}
+.arrangementSubmit{
+	height: 30px;
+	width: 40%;
+	background-color: orange;
+	border-color: orange;
+	color:black;
+	border-radius: 10px;
+	margin-top: 10px;
+	vertical-align:top;
+	float:right;
+}
+
+td.text{
+	position: inherit;
+	font-family: arial, sans-serif;
+	display: inline-block;
+}
+
+
+div.arrangementRamme{
+	margin-bottom: 100px;
+	margin-top: 10px;
+	border: none;
+	width: 100%;
+}
+div.arrangementListe{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+td{
+	width: 100%;
+}
+
+
+button {
+    background: none;
+    color: black;
+    border: none;
+    padding: 0;
+    font: inherit;
+}
+
+.viddeKnappene {
+    background-color: #5c5a5a;
+    border-right: 2px;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 10px 39px 10px 10px;
+	background-color: orange;
+	margin-left: 2%;
+	display: inherit;
+	margin-bottom: 5px;
+	margin-top:20px;
+	width: auto;
+	display: inline-block;
+  	position: inherit;
+  	vertical-align:top;
+}
+
+
+table, td, th {
+	border: 2px solid #5c5a5a;
+	margin-bottom: 20px;
+	border-collapse:collapse;
+	display: table;
+	border: none;
+
+	}
+
+
+@media screen and (min-width: 450px) and (max-width: 850px) {
+
+	h2{
+		font-size: 1.2em;
+	}
+
+	input.viddeKnappene{
+		width: 90%;
+	}
+	.arrangementSubmit{
+		width: 75%;
+	}
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+	h2{
+		font-size: 1.1em;
+	}
+
+	table.excl{
+		width: 90%;
+	}
+
+	#datoEndring{
+		width: 100%;
+	}
+	input.viddeKnappene{
+		width: 100%;
+	}
+
+
+	div.arrangementRamme {
+		margin-bottom: 100px;
+		margin-top: 20px;
+	}
+
+	.arrangementFelt {
+		height: 40px;
+		width: 100%;
+		resize: none;
+		margin-top: 10px;
+		vertical-align: top;
+
+	}
+	div.arrStedTid{
+		clear:both;
+		width: 100%;
+	}
+	div.beskOpp{
+		clear:both;
+		width: 100%;
+	}
+	.arrangementBeskrivelse{
+		width: 100%;
+	}
+
+
+	.arrangementSubmit {
+		height: 40px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: orange;
+		border-color: orange;
+		border-radius: 10px;
+
+	}
+	div.arrangementBakgrunn{
+		height: 450px;
+	}
+
+	table, td, th {
+		border: 2px solid black;
+		margin-bottom: 20px;
+		border-collapse: collapse;
+		border: none;
+	}
+
+	div.arrangementRamme {
+		overflow: auto;
+	}
+}
+

@@ -1,0 +1,203 @@
+/*Denne siden er sist endret 26.05.2018 av Ole
+Denne siden ble kontrollert 01.06.2018 av Ketil*/
+
+/*Global styling*/
+div#rammen{
+	display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+	width: 100%;
+	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+	}
+div#NyAdmin{
+	margin-bottom: 50px;
+	border: 1px solid white;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+	}
+div.container, fieldset.container{
+	background-color: #353f40;
+	height: 330px;
+	}
+div#vindu{
+	border: 1px solid white;
+    border-radius: 4px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+textarea.tekstfelt{
+	padding-left: 10px;
+	padding-top: 10px;
+	margin: 5px;
+    height: 200px;
+    border-radius: 5px;
+    resize: none;
+}
+h1.overskriften, h2.overskriften, h3.overskriften{
+	font-size: 26px;
+	padding: 5px;
+	text-align: center;
+	background-color: black;
+	}
+input#lagreRegel{
+    margin-right: 3px;
+    border-radius: 5px;
+    background-color: orange;
+	padding: 10px;
+	display: none;
+	margin: 5px;
+	float: right;
+}
+button#avbrytRegel{
+    margin-right: 3px;
+    border-radius: 5px;
+    background-color: orange;
+	padding: 10px;
+	display: none;
+	margin: 5px;
+	float: right;
+}
+button#endreRegel{
+    margin-right: 3px;
+    border-radius: 5px;
+    background-color: orange;
+	padding: 10px;
+	margin: 5px;
+	float: right;
+}
+
+
+@media screen and (min-width: 850px){
+textarea.tekstfelt{
+	width: 95%;
+	}
+fieldset.Foresporsel{
+	margin-left: 0px;
+	margin-top: 20px;
+	padding: 0px;
+	display: inline-block;
+	}
+div#NyAdmin{
+	max-width: 800px;
+	width: 70%;
+	min-width: 500px;
+	}
+div#vindu{
+	width: 600px;
+	}
+label.regLabel{
+	margin-left: 50px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: inline-block;
+	}
+input#byttKnapp{
+	margin-top: 50px;
+	}
+input.regInput{
+	display: inline-block;
+	margin-right: 50px;
+	}
+button.knapp {
+	padding: 9px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: 50px;
+    }
+form#endrePassord{
+	padding: 25px;
+	}
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 850px) {
+textarea.tekstfelt{
+	width: 95%;
+	}
+fieldset.Foresporsel{
+	margin-left: 0px;
+	margin-top: 20px;
+	padding: 0px;
+	display: inline-block;
+	}
+div#NyAdmin{
+	max-width: 500px;
+	min-width: 400px;
+	width: 98%;
+	}
+div#vindu{
+	max-width: 500px;
+	min-width: 400px;
+	width: 95%;
+	}
+label.regLabel{
+	margin-left: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: inline-block;
+	}
+input#byttKnapp{
+	margin-top: 50px;
+	}
+input.regInput{
+	display: inline-block;
+	margin-right: 25px;
+	}
+button.knapp {
+	padding: 9px;
+	margin-top: 20px;
+	margin-right: 25px;
+    }
+form#endrePassord{
+	width: 380px;
+	padding: 25px;
+	}
+}
+
+@media screen and (max-width: 449px){
+textarea.tekstfelt{
+	width: 93%;
+	}
+div#vindu{
+	min-width: 280px;
+	width: 95%;
+	}
+div#NyAdmin{
+	width: 270px;
+	height: 440px;
+	}
+h3.overskriften{
+	margin-bottom: 12px;
+	}
+form#regAdmin{
+	width: 185px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+input.regInput{
+	margin-bottom: 12px;
+	}
+button.knapp{
+	padding: 8px;
+	margin-top: 20px;
+	}
+button#regKnapp{
+	margin-right: 32px;
+	}
+fieldset.Foresporsel{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding: 0px;
+	}
+form#endrePassord{
+	margin-left: auto;
+	margin-right: auto;
+	width: 185px;
+	}
+
+}

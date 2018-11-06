@@ -1,0 +1,355 @@
+/*Denne siden er sist endret 01.06.2018 av Jan
+Denne siden ble kontrollert 01.06.2018 av Ole*/
+
+div.wrapper{
+	margin-bottom: 100px;
+	margin-top: 30px;
+	margin-left: 100px;
+}
+a.link{
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	text-decoration: none;
+	color: initial;
+}
+div.link-knapp{
+	float:left;
+	margin: 0 auto;
+	width: 25%;
+}
+div.link-knapp a {
+	width: 72%;
+	color: #333;
+	background: #cad7dd;
+	background-size: 40px 12px;
+	margin-bottom: 13px;
+	padding: 9px 32px 7px 18px;
+	border: 2px #cad7dd;
+	border-radius: 4px;
+	box-shadow: 0 5px 0 #a6bcc6;
+	display: block;
+	float:left;
+}
+div.bilde{
+	float:right;
+	width: 70%;
+}
+.bildeStørrelse{
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	max-width: 450px;
+	margin: 0 auto;
+}
+footer	{
+	margin-top: 100px;
+}
+h3.finnfrem {
+	margin-top: 30px;
+	margin-bottom: 2%;
+}
+p.info{
+	text-align: center;
+	margin-right: 125px;
+	font-size: 45px;
+	margin-top: 40px;
+}
+p.dato{
+	float:right;
+	margin-right: 5px;
+}
+#pagineringHolder{
+	width: 810px;
+	height: 35px;
+	margin-top: -5px;
+	margin: 0 auto;
+	border: 2px solid #4c4c4c;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #4c4c4c;
+}
+.paginering {
+	height: 30px;
+	width: 18%;
+	background-color: white;
+	color: black;
+	margin-left: 12px;
+	margin-top: 3px;
+	border-radius: 5px;
+	vertical-align: top;
+}
+th.th {
+	background-color: #E6E6E6;
+	width: 800px;
+	height: 150px;
+	color: black;
+}
+p.h1p {
+	text-align: left;
+	background-color: #E6E6E6;
+	height: 50px;
+	color: black;
+	padding:0 0 0 15px;
+}
+article p {
+	margin-left: 150px;
+}
+table {
+	margin: auto;
+	border-radius: 8px;
+	margin-top: 2%;
+	border: 5px solid #4c4c4c;
+}
+div.venstre {
+	box-sizing: border-box;
+	float:left;
+	width: 59%;
+}
+div.row {
+	box-sizing: border-box;
+	display: table;
+	margin: auto;
+}
+div.innhold	{
+	box-sizing: border-box;
+	float: left;
+	background-color: #5C5A5A;
+	padding: 33px;
+	border: 1px solid black;
+}
+div.beskrivelse	{
+	box-sizing: border-box;
+	background-color: #5C5A5A;
+	padding: 25px;
+	float: left;
+	width:571px;
+	height:256px;
+}
+@media screen and (min-width: 850px){
+	table#mobil{
+		display: none;
+	}
+	div#responsivMobil{
+		display:none;
+	}
+	#mobilPagineringsHolder{
+		display: none;
+	}
+	div#skall{
+		display:none;
+	}
+}
+@media screen and (min-width: 450px) and (max-width: 850px) {
+	#mobilPagineringsHolder{
+		display: none;
+	}
+	div#skall{
+		display:none;
+	}
+	table#mobil{
+		display: none;
+	}
+	div#responsivMobil{
+		display:none;
+	}
+	div.wrapper{
+		margin-left: 10px;
+	}
+	div.bilde{
+		width: 60%;
+	}
+	div.link-knapp a {
+		max-width: 140px;
+	}
+	div.bildeStørrelse{
+		width: 70%;
+		margin: 0 auto;
+	}
+	p.info{
+		font-size: 30px;
+	}
+	#pagineringHolder{
+		width: auto;
+		height: 35px;
+		margin-top: -5px;
+		border: 2px solid #4c4c4c;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		background-color: #4c4c4c;
+	}
+	.paginering {
+		width: 17%;
+	}
+	th.th {
+		background-color: #E6E6E6;
+		width: 800px;
+		height: 200px;
+		border-collapse: collapse;
+		padding: 25px;
+		border: 1px solid black;
+	}
+	p.h1p {
+		text-align: left;
+		background-color: #E6E6E6;
+		height: 50px;
+		border: 1px solid black;
+	}
+	article p {
+		margin-left: 50px;
+	}
+	table {
+		margin: auto;
+		margin-top: 2%;
+		border-collapse: collapse;
+		border-radius: 8px;
+		border: 5px solid #4c4c4c;
+	}
+	div.venstre {
+		float:none;
+		margin: 0 auto;
+		width: 90%;
+	}
+	div.row {
+		display: table;
+		width: 100%;
+	}
+	div.innhold	{
+		float: left;
+		background-color: #5C5A5A;
+		padding: 25px;
+		border: 1px solid black;
+		width:100%;
+		height: 5px;
+		text-align: center;
+	}
+	div.beskrivelse	{
+		background-color: #5C5A5A;
+		padding: 25px;
+		float: left;
+		width:100%;
+		height:256px;
+	}
+}
+@media screen and (max-width: 450px) {
+	table#pcTablet{
+		display:none;
+	}
+	table#mobil {
+		overflow-y: hidden;
+		overflow-x: scroll;
+		height: 400px;
+		
+	}
+	th{
+		border: 1px solid black;
+		padding-left: 20px;
+		padding-right: 20px;
+		min-width: 130px;
+	}
+	div#responsivMobil{
+		overflow-y: hidden;
+		overflow-x: scroll;
+		
+	}
+	div#skall{
+		width: 100%;
+	}
+	h3.finnfrem{
+		text-align: center;
+	}
+	h3.chatTekst{
+		text-align: center;
+	}
+	div.link-knapp{
+		width: 100%;
+	}
+	div.link-knapp a {
+		width: 72%;
+	}
+	div.wrapper{
+		margin-left: 0px;
+	}
+	p.info{
+		font-size: 20px;
+	}
+    div.bilde{
+        display: none;
+    }
+	#pagineringHolder{
+		display: none;
+	}
+	#mobilPagineringsHolder{
+		width: auto;
+		height: 35px;
+		margin-top: -5px;
+		border: 2px solid #4c4c4c;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		background-color: #4c4c4c;
+	}
+	.paginering {
+		width: 45%;
+	}
+	th.th		{
+		background-color: #E6E6E6;
+		width: 800px;
+		height: 200px;
+		padding: 25px;
+		text-align: center;
+		border: 1px solid black;
+	}
+	th.h1p		{
+		text-align: left;
+		background-color: #E6E6E6;
+		height: 50px;
+		border: 1px solid black;
+		color: black;
+		padding: 0;
+		text-align: center;
+		vertical-align: top;
+		min-width: 230px;
+	}
+	p.info		{
+		display: none;
+	}
+	p.informasjonen{
+		min-width: 230px;
+		margin-top: 30px;
+
+	}
+	p.dato{
+		background-color: black;
+		color: white;
+		min-width: 230px;
+		margin-right: 0;
+
+	}
+	p.overskrift{
+		height: 20%;
+		min-width: 230px;
+		padding: 0;
+	}
+	article p	{
+		margin-left: 150px;
+	}
+	table{
+		margin: auto;
+		margin-top: 2%;
+		border-collapse: collapse;
+		margin-bottom: 2%;
+		border-radius: 8px;
+		border: 5px solid #4c4c4c;
+	}
+	#overskrifter {
+		margin-top: 20px;
+	}
+	div.venstre	{
+        float:none;
+        margin: 0 auto;
+        width: 180px;
+	}
+	.row		{
+		display: table;
+	}
+}

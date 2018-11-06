@@ -1,0 +1,612 @@
+/*Denne siden er sist endret 28.05.2018 av Ole
+Denne siden ble kontrollert 01.06.2018 av Hamta*/
+
+/* -------------------------------------- Profilbilde ------------------------------------ */ 
+img.profilbildevisning {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 10px;
+	}
+div.ytre-profilbilde-container{
+	margin-right: 25px;
+	padding: 20px;
+	}
+img.bildeViser{
+	width: 100%;
+	height: 100%;
+	background-color: #323232;
+	}
+div#lastOppFormContainer{
+	background-color: #4c4c4c;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	position: relative;
+	}
+div#lastOppContainer{
+	display: none;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 15;
+	top: 0;
+	left: 0;
+	}
+button#lukkLastOppForm{
+	float: right;
+	top: 0px;
+	right: 20px;
+	position: absolute;
+	}
+input#lagreKnapp{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	}
+input#velgFil::-webkit-file-upload-button {
+	display: table;
+	color: black;
+	border-radius: 5px;
+	padding: 6px;
+	background-color: orange;
+	}
+input#velgFil{
+	background-color: white;
+	color: black;
+	border-radius: 5px; 
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	}
+img#visning{
+	border-radius: 10px;
+	border: 3px solid #cccccc;
+	}	
+div#visningsRamme{
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 5px;
+	}
+
+
+	
+	
+/* ------------------------------------- Beskrivelse ------------------------------------------ */
+section#beskrivelse textarea {
+	resize: none;
+	height: 300px;
+	width: 100%;
+	background-color: #4c4c4c;
+	border: none;
+	text-align: left;
+	color: white;
+	padding-top: 15px;
+	font-family: comfortaa;
+	font-size: 18px;
+	}
+button#avbrytBeskrivelse{
+	display: none;
+	margin-left: 8px;
+	}
+input#lagreBeskrivelse{
+	display: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	}
+button#beskrivelseKnapp{
+	margin-top: 10px;
+	margin-right: -5px;
+	}
+	
+	
+	
+	
+/* ---------------------------------- Brukerinfo-tabell ------------------------------------- */
+table#brukerInfoTabell td, table#brukerInfoTabell th {
+	border: 2px solid black;
+	}
+div#uformatertDato{
+	display: none;
+	}
+button#lagreInfo{
+	display: none;
+	}
+button#avbrytBrukerInfo{
+	display: none;
+	margin-left: 10px;
+	}
+input#fornavn{
+	width: 80%;
+	min-width: 210px;
+	}
+input#etternavn{
+	width: 80%;
+	min-width: 210px;
+	}
+select#campus{
+	width: 60%;
+	min-width: 210px;
+	}
+input#fodselsdato{
+	width: 160px
+	}
+input#land{
+	width: 50%;
+	min-width: 180px;
+	}
+table#brukerInfoTabell {
+	border: 3px solid #cccccc;
+	border-collapse: collapse;
+    font-size: 18px;
+	width: 100%;
+	height: 320px;
+	}
+
+	
+	
+/* --------------------------------------- Interesser ------------------------------------------ */
+button#avbrytInteresse{
+	margin-right: 20px;
+	}
+input#lagreInteresse{
+	margin-top: 15px;
+	}
+select#velgInteresser{
+    border: none;
+	padding: 2px;
+    font-size: 16px;
+    width:100%;
+	}
+form#interesseForm{
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	min-width: 250px;
+	}
+div#manglerInteresser{
+	padding-top: 70px;
+	display: none;
+	width: 250px;
+	margin-right: auto;
+	margin-left: auto;
+	min-width: 250px;
+	}
+div#manglerInteresser button{
+	float: left;
+	}
+div#manglerInteresser input{
+	font-size: 18px;
+	padding: 4px;
+	margin-top: 14px;
+	}
+	
+/* -------------------------------------- Studium --------------------------------------- */
+div.input-felt input{
+	padding: 6px;
+	font-size: 18px;
+	width: 100%;
+	min-width: 250px;
+	}
+div.input-felt{
+	margin-top: 15px;
+	}
+form.studieOgInteresseForm{
+	display: none;
+	}
+div#studiumInput{
+	margin-top: 15px;
+	width: 80%;
+	}
+div#gradInput{
+	margin-top: 15px;
+	width: 40%;
+	}
+div#skoleInput{
+	margin-top: 15px;
+	width: 70%;
+	}
+div#arskullInput{
+	margin-top: 15px;
+	width: 40%;
+	}
+input#lagreStudium{
+	margin-top: 15px;
+	}
+	
+	
+
+/* ---------------------------------------- Generelt ------------------------------------- */
+h1.overskrift	{
+	margin: 20px;
+	font-size: 32px;
+	}	
+section.container{
+	background-color: #4c4c4c;
+	border-radius: 10px;
+	}
+div#innhold	{
+	display: block;
+	width: 95%;
+	max-width: 2020px;
+	margin: auto;
+	}
+div.input-felt{
+	margin-top: 15px;
+	}	
+input.knapper, label.knapper{
+    margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+    border-radius: 5px;
+    background-color: orange;
+    padding: 6px;
+    float:right;
+	}
+button.knapp{
+	padding: 6px;
+	margin-top: 15px;
+	margin-right: -2px;
+	}
+div#profilmeny{
+	height: 30px;
+	padding: 6px;
+	border-radius: 4px;
+	background-color: #323232;
+	}
+button.profilKnapper {
+	background-color: grey;
+    border: 0;
+    border-radius: 0.2em;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 7px 16px;
+	}
+button#tilbakeKnapp{
+	height: 40px;
+	width: 90px;
+	background-color: orange;
+	border-color: orange;
+	color: white;
+	border-radius: 10px;
+	margin-top: 25px;
+	vertical-align: top;
+	cursor: pointer;
+	font-family: comfortaa;
+	font-size: 18px;
+	margin-right: 60px;
+
+}
+input.brukerInput, select.brukerInput{
+	font-family: comfortaa;
+	font-size: 18px;
+	padding: 6px;
+	display: none;
+	}
+fieldset#profilRamme{
+	border-radius: 20px;
+	margin-bottom: 50px;
+	width: 100%;
+	}
+table.brukerInfo{
+	width: 100%;
+	font-size: 18px;
+	border: 3px solid #cccccc;
+	border-collapse: collapse;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	}
+tr:nth-child(odd) {
+	background-color: #908b82;
+	}
+tr:nth-child(even) {
+	background-color: #ffa502;
+	}
+td, th{
+    border: 1px solid black;
+    text-align: left;
+	padding-left: 8px;
+	}
+	
+	
+@media screen and (min-width: 850px){
+/* -------------------------------------- Profilbilde PC ------------------------------------ */ 
+section#profilbilde{
+	height: 410px;
+	width: 330px;
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+	}
+div.profilbilde-container {
+	height: 290px;
+	}
+div.ytre-profilbilde-container{
+	width: 290px;
+	height: 380px;
+	}
+div#lastOppFormContainer{
+	width: 450px;
+	height: 450px;
+	}
+div#visningsRamme{
+	width: 310px;
+	height: 310px;
+	}
+p#lastOppTekst{
+	padding: 15px;
+	font-size: 25px;
+	}
+	
+	
+	
+	
+/* ------------------------------------- Beskrivelse PC ------------------------------------------ */
+section#beskrivelse{
+	margin-top: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 450px;
+	}
+div#beskrivelsen{
+	padding: 20px 5px 20px 5px;
+	}
+
+
+
+/* ---------------------------------- Brukerinfo-tabell PC ------------------------------------- */
+table#brukerInfoTabell th {
+	width: 140px;
+	}
+div.tabell-container {
+	width: 100%;
+	}
+section#brukerinfo{
+	margin-top: 20px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+	width: 90%;
+	max-width: 950px;
+	min-height: 320px;
+	padding: 20px 5px 20px 5px;
+	}
+
+	
+	
+	
+/* --------------------------------------- Interesser PC ------------------------------------------ */
+section#interesser{
+	margin-bottom: 20px;
+	padding: 20px 5px 20px 5px;
+	width: 35%;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+div#interesseContainer{
+	width: 100%;
+	}
+	
+	
+	
+/* -------------------------------------- Studium PC--------------------------------------- */
+section#studium{
+	margin-bottom: 20px;
+	padding: 20px 5px 20px 5px;
+	width: 35%;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+div#studiumContainer{
+	width: 100%;
+	}
+
+	
+	
+	
+	
+/* ---------------------------------------- Generelt PC ------------------------------------- */
+h1.overskrift	{
+	margin: 20px;
+	}
+div#brukernavn{
+	font-size: 26px;
+	}
+div#innhold	{
+	min-width: 830px;
+	}
+article#overste{
+	display: flex;
+	flex-basis: auto;
+	}
+article#nedre{
+	display: flex;
+	flex-basis: auto;
+	}
+div#profilmeny{
+	margin-left: 25px;
+	max-width: 420px;
+	}
+}
+
+
+@media screen and (max-width: 850px) {
+/* -------------------------------------- Profilbilde Tablet ------------------------------------ */ 
+section#profilbilde{
+	height: 410px;
+	width: 330px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	}
+div.profilbilde-container {
+	height: 290px;
+	}
+div.ytre-profilbilde-container{
+	width: 290px;
+	height: 380px;
+	}
+div#lastOppFormContainer{
+	width: 420px;
+	height: 420px;
+	}
+div#visningsRamme{
+	width: 290px;
+	height: 290px;
+	}
+p#lastOppTekst{
+	padding: 15px;
+	font-size: 25px;
+	}
+	
+	
+	
+	
+/* ------------------------------------- Beskrivelse Tablet ------------------------------------------ */
+section#beskrivelse{
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	width: 80%;
+	height: 430px;
+	}
+div#beskrivelsen{
+	padding: 20px 20px 0px 20px;
+	}
+
+
+
+/* ---------------------------------- Brukerinfo-tabell Tablet ------------------------------------- */
+table#brukerInfoTabell th {
+	width: 140px;
+	}
+div.tabell-container {
+	width: 100%;
+	}
+section#brukerinfo{
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	width: 80%;
+	max-width: 950px;
+	min-height: 320px;
+	padding: 20px 20px 60px 20px;
+	}
+
+	
+	
+	
+/* --------------------------------------- Interesser Tablet ------------------------------------------ */
+section#interesser{
+	margin-bottom: 20px;
+	padding: 20px 20px 60px 20px;
+	width: 80%;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+div#interesseContainer{
+	width: 100%;
+	}
+	
+	
+	
+	
+/* -------------------------------------- Studium Tablet--------------------------------------- */
+section#studium{
+	margin-bottom: 20px;
+	padding: 20px 20px 60px 20px;
+	width: 80%;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+div#studiumContainer{
+	width: 100%;
+	}
+	
+/* ---------------------------------------- Generelt Tablet ------------------------------------- */
+h1.overskrift	{
+	margin: 20px;
+	}
+div#brukernavn{
+	font-size: 26px;
+	}
+button#tilbakeKnapp{
+	float:right;
+	margin-bottom: 20px;
+}
+button.profilKnapper {
+	font-size: 13px;
+	}
+div#profilmeny{
+	margin-left: 1px;
+	max-width: 400px;
+	}
+}
+
+
+@media screen and (max-width: 450px)	{
+/* -------------------------------------- Profilbilde Tablet ------------------------------------ */ 
+section#profilbilde{
+	height: 410px;
+	width: 300px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	}
+div#innhold{
+	margin: 0px;
+	}
+input#velgFil{
+	margin-bottom: 40px;
+	}
+input#lagreKnapp{
+	margin-right: 90px;
+	}
+div.profilbilde-container {
+	height: 290px;
+	}
+div.ytre-profilbilde-container{
+	width: 260px;
+	height: 380px;
+	}
+div#lastOppFormContainer{
+	width: 300px;
+	height: 480px;
+	}
+div#visningsRamme{
+	width: 290px;
+	height: 290px;
+	}
+p#lastOppTekst{
+	padding: 15px;
+	font-size: 25px;
+	}
+div#profilmeny{
+	margin-left: 1px;
+	margin-bottom: 90px;
+	}
+button.profilKnapper {
+	background-color: grey;
+	border: 0;
+	border-radius: 0px;
+	color: #ffffff;
+	font-size: 13px;
+	width: 100%;
+	}
+
+}

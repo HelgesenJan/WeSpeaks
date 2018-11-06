@@ -1,0 +1,162 @@
+/*Denne siden er sist endret 14.05.2018 av Hamta og Ketil
+Denne siden ble kontrollert 01.06.2018 av Jan*/
+	 
+img#logoen	{display: block;
+	margin: 0 auto;
+	}
+h1.overskrift	{
+    margin: 20px;
+    font-size: 32px;
+	}
+input.knapp:focus {
+	background-color: #FFFF99;
+}
+div#profilmeny{
+	margin-left: 35px;
+	max-width: 420px;
+	padding: 6px;
+	border-radius: 4px;
+	background-color: #323232;
+}
+button.profilKnapper {
+	background-color: grey;
+	border: 0;
+	border-radius: 0.2em;
+	color: #ffffff;
+	font-size: 14px;
+	padding: 7px 16px;
+}
+fieldset.Foresporsel{
+	border-radius: 4px;
+	margin-bottom: 50px;
+	margin-left: 20px;
+	}
+input.tekst	{
+	margin-top: 10px;
+	padding: 6px;
+	border-radius: 4px;
+	}
+input.knapp {
+	margin-right: 3px;
+	border-radius: 5px;
+	background-color: orange;
+	}
+label.byttLabel {
+	display: inline-block;
+	margin-top: 13px;
+	}
+input.knapp:hover{
+	background-color: #ff8003;
+	}
+
+@media screen and (min-width: 850px){
+
+fieldset.Foresporsel{
+	width: 600px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 25px;
+	padding-top: 25px;
+    }
+input.tekst	{
+	float: right;
+	font-size: 18px;
+    }
+legend	{
+	font-size: 42px;
+    }
+label {
+	font-size: 24px;
+	margin-bottom: 10px;
+    }
+input.knapp {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	padding: 10px;
+    }
+}
+
+/*Tabelstørrelse styling*/
+@media screen and (min-width: 450px) and (max-width: 850px) {
+
+fieldset.Foresporsel{
+	width: 360px;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+    }
+legend	{
+	font-size: 32px;
+    }
+input.tekst	{
+	float: right;
+    }
+button.profilKnapper {
+    padding: 5px 12px;
+	font-size: 13px;
+	}
+input.tekst	{
+	margin-top: 10px;
+	padding: 6px;
+	border-radius: 4px;
+	font-size: 14px;
+    }
+input.knapp {
+	padding: 7px;
+    }
+label.byttLabel{
+	font-size: 20px;
+	margin-top: 13px;
+	margin-bottom: 10px;
+    }
+div#knapper {
+	white-space: pre-line;
+    }
+}
+
+/*Mobil styling*/
+@media screen and (max-width: 449px){
+div#profilmeny{
+	margin-left: 1px;
+	margin-bottom: 30px;
+	}
+button.profilKnapper {
+	background-color: grey;
+	border: 0;
+	border-radius: 0px;
+	color: #ffffff;
+	font-size: 14px;
+	width: 100%;
+	}
+fieldset.Foresporsel{
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	padding-left: 10px;
+	padding-right: 10px;
+    }
+article.wrap{
+	margin-left: 33px;
+    }
+input#byttKnapp{
+	margin-left: 49px;
+    }
+input#tilbakeKnapp{
+	margin-left: 32px;
+	margin-bottom: 30px;
+    }
+legend	{
+	font-size: 26px;
+    }
+input.knapp {
+	margin-top: 25px;
+	margin-bottom: 20px;
+	float: left;
+	padding: 5px;
+    }
+div#knapper {
+	white-space: pre-line;
+    }
+}

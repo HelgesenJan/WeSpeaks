@@ -1,0 +1,324 @@
+/*Denne siden er sist endret 14.05.2018 av Ketil og Hamta
+Denne siden ble kontrollert 01.06.2018 av Jan*/
+
+/*Global styling*/
+*	{
+	margin: 0px; 
+	padding: 0px;
+	}
+body{
+	background-color: #191919;
+	color: white;
+	font-family: comfortaa;
+	font-size: 20px;
+	}
+pre	{
+	font-family: comfortaa;
+	font-size: 20px;
+	}
+button 	{
+	cursor:pointer;
+	}
+header.topbar	{
+	height: 100px;
+	background-color: #191919;
+	padding: 15px;
+	}
+.profilbilde{
+	z-index: 10;
+}
+.action-buttons-container {
+	display: flex;
+	align-items: center;
+	}
+a {
+	text-decoration: none;
+	color: white;
+	}
+a:hover { 
+	text-decoration:none; 
+	cursor:pointer;  
+	}
+.button {
+	background-color: grey;
+	border: 0;
+	border-radius: 0.2em;
+	color: #ffffff;
+	}
+.button--primary {
+	background-color: orange;
+	z-index: 10;
+	}
+.action-buttons {
+	margin-left: 10px; 
+	}
+.meny{
+	background-color: orange;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	width: 100%;
+	}
+#menyElement{
+	top: 0;
+	position: sticky;
+	position: -webkit-sticky;
+	}
+.endrebilde{
+	border-radius:40px;
+	margin-left: 5%;
+	}
+.meny a:link{
+	text-decoration: none;
+	color: white;
+	}
+.meny a:visited	{
+	color: white;
+	}
+input[type=checkbox]{
+	display: none;
+	-webkit-appearance: none;
+	position: relative;
+	}
+section.TheSection	{
+	height: 82%;
+	}
+#hamburgeren{
+	display:none;
+	}
+.knapp 	{
+	float: right;
+	margin-right: 3px;
+	border-radius: 5px;
+	background-color: orange;
+	}
+footer	{
+	height: 100px;
+	background-color: grey;
+	color: black;
+	font-size: 18;
+	text-align: center;
+	clear:both;
+	}
+div#reglene{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	}
+pre#regler{
+	white-space: normal;
+	}
+h1#reglerWS{
+	margin-bottom: 40px;
+	margin-top: 15px;
+	}
+
+@media screen and (min-width: 850px){
+.button {
+	font-size: 20px;
+	padding: 10px 22px;
+	}
+.topbar-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+.action-buttons-container {
+	display: flex;
+	align-items: center;
+	}
+.profilbilde{
+	border-radius: 37px;
+	top:110px;
+	height:80px;
+	width: 80px;
+	margin-left: auto;
+	position: sticky;
+	position: -webkit-sticky
+	}
+#mineSider	{
+	float: left;
+	margin-right: 20px;
+	}	
+.meny ul li a:hover	{
+	background-color: #ff8533;
+	color: white;
+	}
+#valgt	{
+	background-color: #ff6600;
+	color: white;
+	}
+nav.meny ul li	{
+	display: inline;
+	list-style: block;
+	}
+nav.meny ul li a	{
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-radius: 4px;
+	}
+nav.meny .responsivMeny	{
+	display: none;
+	}
+}
+
+/*Tabelstørrelse styling*/
+@media screen and (min-width: 450px) and (max-width: 850px) {
+.button {
+	font-size: 20px;
+	padding: 10px 22px;
+	}
+.topbar-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+.profilbilde{
+	border-radius: 37px;
+	top:110px;
+	height:80px;
+	width: 80px;
+	margin-left: auto;
+	position: sticky;
+	position: -webkit-sticky
+	}
+.action-buttons-container {
+	display: flex;
+	align-items: center;
+	}
+.bildet		{
+	width: 190px;
+	height: 50px;
+	}
+header.topbar	{
+	height: 50px;
+	}
+nav.meny{
+	padding: 0px;
+	width: 40%;
+	left: 0;
+	}	
+#responsivMeny{
+	border-radius: 10px;
+	width: 51px;
+	height: 50px;
+	display:block;
+	margin-top: -50px;
+	z-index: auto;
+	}	
+#hamburgeren{
+	top: 0;
+	position: sticky;
+	position: -webkit-sticky;
+	border-radius: 10px;
+	display:block;
+	}
+nav.meny ul	{
+	display: none;
+	}
+nav.meny ul.pc li a{
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	}
+nav.meny ul.pc li 	{
+	display: block;
+	}
+#valgt	{
+	background-color: #ff6600;
+	color: white;
+	}
+label{
+	display: block;
+	cursor: pointer;
+	left: 5;
+	}
+input[type=checkbox]:checked ~ .meny .pc	{
+	display: block;
+	}
+}
+
+/*Mobil styling*/
+@media screen and (max-width: 450px){
+html, body {
+	min-width: 258px;
+	}
+.button { 
+	font-size: 16px;
+	padding: 8px 18px;
+	}
+#mineSider	{
+	display: none;
+	}
+.profilbilde{
+	border-radius: 37px;
+	top:110px;
+	height:45px;
+	width: 45px;
+	margin-left: auto;
+	position: sticky;
+	position: -webkit-sticky;
+	}
+.action-buttons-container{
+	margin-top: 6px;
+	float: right;
+	}
+.button--primary {
+	margin-top: 6px;
+	}
+.bildet	{
+	display: block;
+	width: 190px;
+	height: 50px;
+	margin: 0 auto;
+	}
+header.topbar	{
+	height: 25px;
+	}
+nav.meny {
+	padding: 0px;
+	width: 45%;
+	left: 0;
+	}	
+#responsivMeny{
+	border-radius: 10px;
+	width: 45px;
+	height: 45px;
+	display:block;
+	margin-top: -45px;
+	z-index: auto;
+	}	
+#hamburgeren{
+	border-radius: 10px;
+	width: 45px;
+	height: 45px;
+	display:block;
+	margin-top: 20px;
+	}
+nav.meny ul	{
+	display: none;
+	}
+nav.meny ul.pc li a{
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+nav.meny ul.pc li 	{
+	display: block;
+	}							
+#valgt	{
+	background-color: #ff6600;
+	color: white;
+	}
+input[type=checkbox]:checked ~ .meny .pc {
+	display: block;
+	}
+footer	{
+	font-size: 14px;
+	}
+}

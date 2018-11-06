@@ -1,0 +1,167 @@
+/*Denne siden er sist endret 11.05.2018 av Hamta og Ketil
+Denne siden ble kontrollert 15.05.2018 av Jan*/
+
+p.Introduksjon{
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+img#logoen	{
+	display: block;
+	margin: 0 auto;
+	}
+div.innhold{
+	text-align: center;
+	}
+fieldset.Foresporsel, fieldset.loggInnField{
+	margin-top: 30px;
+	border-radius: 10px;
+    }
+fieldset#tilbakemelding{
+	margin-top: 30px;
+	clear: left;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	}
+input.tekst	{
+	padding: 5px;
+	border-radius: 4px;
+    }
+button.knapp {
+	float: none;
+	}
+input:focus {
+	background-color: #FFFF99;
+}
+input.knapp {
+	float: left;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	margin-right: 3px;
+	border-radius: 5px;
+	background-color: orange;
+    }
+label {
+	display: inline-block;
+	margin-top: 13px;
+	margin-bottom: 10px;
+	clear: both;
+    }
+input.knapp:hover{
+	background-color: #ff8003;
+    }
+
+@media screen and (min-width: 850px){
+
+fieldset#tilbakemelding{
+	width: 43%;
+	}
+fieldset.Foresporsel, fieldset.loggInnField{
+	width: 43%;
+	margin-right: 10px;
+	margin-left: 10px;
+	max-width: 500px;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	display: inline-block;
+    }
+legend	{
+	font-size: 42px;
+    }
+label {
+	text-align: center;
+	display: block;
+	font-size: 26px;
+	}
+input {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+	display: block;
+	}
+button.knapp {
+	display: block;
+	padding: 9px;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: auto;
+    }
+}
+
+/*Tabelstørrelse styling*/
+@media screen and (min-width: 450px) and (max-width: 850px) {
+	
+fieldset#tilbakemelding{
+	width: 43%;
+	}
+fieldset.Foresporsel, fieldset.loggInnField{
+	width: 43%;
+	max-width: 330px;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	display: inline-block;
+    }
+legend	{
+	font-size: 28px;
+    }
+label {
+	text-align: center;
+	display: block;
+	}
+input {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	}
+button.knapp {
+	display: block;
+	clear: left;
+	padding: 7px;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: auto;
+    }
+}
+
+/*Mobil styling*/
+@media screen and (max-width: 449px){
+p.Introduksjon{
+	font-size: 16px;
+}
+fieldset#tilbakemelding{
+	width: 240px;
+	}
+fieldset.Foresporsel, fieldset.loggInnField{
+	width: 240px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: auto;
+	margin-left: auto;
+    }
+legend	{
+	font-size: 26px;
+    }
+label {
+	text-align: center;
+	display: block;
+	}
+input {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	}
+button.knapp {
+	display: block;
+	clear: left;
+	padding: 5px;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: auto;
+    }
+}

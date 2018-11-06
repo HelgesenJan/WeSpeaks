@@ -1,0 +1,104 @@
+/*Denne siden er sist endret 06.04.2018 av Jan
+Denne siden ble kontrollert 01.06.2018 av Hamta*/
+
+fieldset{
+
+    height:250px;
+    background-color: #4c4c4c;
+    border: 5px solid #ffa502;
+    resize: none;
+    overflow:auto;
+    border-radius: 5px 5px 0 0;
+    margin: 0 auto;
+    width: 70%;
+}
+
+fieldset#scroll{
+    margin-left: 0;
+    width: 90%;
+}
+
+iframe#iframes{
+    height: 260px;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    margin-top: 2%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+textarea#melding{
+    height: 80px;
+    resize: none;
+    float:left;
+    clear:right;
+    top: 0;
+    border-radius: 0 0 0 5px;
+    margin: 0 auto;
+    width: 71%;
+}
+
+
+div.holder{
+    float:right;
+    margin: 0 auto;
+    width: 40%;
+    margin-bottom: 100px;
+}
+
+h3.chatTekst {
+    margin-top: 30px;
+}
+
+div#meldingsRamme{
+    border: 1px solid orange;
+    height: 61px;
+}
+
+input#submit{
+    height: 83px;
+    font-size: 20px;
+    top: 1px;
+    border-radius: 0 0 5px 0;
+    border-left: 1px solid black;
+    width: 20%;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+/* TABLET */
+
+@media screen and (min-width: 450px) and (max-width: 850px) {
+
+div.holder{
+    width: 90%;
+}
+fieldset{
+    width: 90%;
+}
+textarea#melding{
+    width: 71%;
+}
+
+}
+
+/* MOBIL */
+
+@media screen and (max-width: 450px) {
+
+    div.holder{
+        width: 90%;
+    }
+    fieldset{
+        width: 90%;
+    }
+    textarea#melding{
+        width: 71%;
+    }
+
+
+}

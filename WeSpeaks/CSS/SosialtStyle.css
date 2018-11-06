@@ -1,0 +1,321 @@
+/*Denne siden er sist endret 30.05.2018 av Jan
+Denne siden ble kontrollert 01.06.2018 av Hamta*/
+
+div#hovedramme{
+	height: 250px;
+	margin-bottom: 30px;
+	border: 2px solid white;
+	border-radius: 10px;
+	width: auto;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: #4c4c4c;
+}
+div.resultatRamme{
+	padding: 20px;
+	height: auto;
+	margin-bottom: 30px;
+	border: 2px solid white;
+	border-radius: 10px;
+	width: auto;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: #4c4c4c;
+	text-align: center;
+}
+div#tekstramme{
+	float:left;
+	width: 48%;
+	height: 82%;
+	border-radius: 10px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+p.sokTekst {
+	margin: 3px;
+	height: auto;
+}
+h3#vw{
+	font-size: 1.5vw;
+}
+h2.sokHeader{
+	text-align: center;
+}
+p.sokTekstInfo {
+	margin-top: 30px;
+	margin-left: 3px;
+	height: auto;
+}
+div#funksjonsRamme{
+	width: 40%;
+	height: 82%;
+	margin-left: auto;
+	margin-right: auto;
+	float:right;
+	border-radius: 10px;
+	padding: 20px;
+}
+div#sokStudie{
+	height: auto;
+	width: 40%;
+	background-color: #191919;
+	border-radius: 10px;
+	padding: 20px;
+	float:left;
+	box-sizing:border-box;
+	margin-left: auto;
+	margin-right: auto;
+}
+div#sokInteresse{
+	height: auto;
+	width: 40%;
+	background-color: #191919;
+	border-radius: 10px;
+	padding: 20px;
+	box-sizing: border-box;
+	float: right;
+	margin-left: auto;
+	margin-right: auto;
+}
+input.tekst	{
+	padding: 5px;
+	border-radius: 4px;
+	margin-top: 30px;
+	margin-right: 5px;
+	margin-bottom: 40px;
+}
+input.knapper {
+	margin-right: 3px;
+	border-radius: 5px;
+	background-color: orange;
+	padding: 6px;
+	cursor:pointer;
+}
+input#sokKnapp{
+	cursor:pointer;
+}
+table{
+	color:#191919;
+	border-spacing: 10px;
+	width: 100%;
+	height: 80%;
+	margin-top: 2%;
+	padding: 7px;
+	margin-bottom: 1%;
+}
+td{
+	border: 2px solid #191919;
+	height: 40px;
+	background-color: orange;
+	border-radius: 10px;
+}
+td:empty {
+	visibility: hidden;
+}
+td a{
+	color: #2200CC;
+}
+table#funkTable{
+	height: auto;
+}
+div.custom-select{
+	width: 100%;
+}
+select{
+	background-color: orange;
+	border: none;
+	color: white;
+	padding: 10px 10px;
+	border-radius:20px;
+	margin-top: 20px;
+	display: inline-block;
+	width: 100%;
+	font-size: 1.2vw;
+}
+.studieSubmit{
+	height: 40px;
+	width: 90px;
+	margin-left: 0.5%;
+	background-color: orange;
+	border-color: orange;
+	color:white;
+	border-radius: 10px;
+	margin-top: 25px;
+	vertical-align:top;
+	cursor:pointer;
+}
+.interesseSubmit{
+	height: 40px;
+	width: 90px;
+	margin-left: 0.5%;
+	background-color: orange;
+	border-color: orange;
+	color:white;
+	border-radius: 10px;
+	margin-top: 25px;
+	vertical-align:top;
+	cursor:pointer;
+}
+@media screen and (min-width: 1920px){
+	h3#vw{
+		font-size: 25px;
+	}
+}
+@media screen and (min-width: 850px){
+	h1.overskrift {
+		margin: 30px;
+		font-size: 30px;
+	}
+	input.tekst {
+		width: 50%;
+	}
+}
+@media screen and (min-width: 450px) and (max-width: 850px) {
+	h1.overskrift {
+		margin: 30px;
+		font-size: 25px;
+		text-align: center;
+	}
+	div#hovedramme{
+		height: 500px;
+	}
+
+	h3#vw{
+		font-size: 3vw;
+	}
+	div#rammeTekstBilde{
+		width: auto;
+		height: 30%;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 0;
+	}
+	div#bilderamme{
+		height: auto;
+		overflow:hidden;
+	}
+	img.bilde{
+		width: auto;
+		float:right;
+		margin-right: 30px;
+	}
+	img.bildeSkjul{
+	}
+	input.tekst {
+		width: 50%;
+	}
+	div#tekstramme{
+		height: 40%;
+		width: auto;
+		float:none;
+	}
+	div#funksjonsRamme{
+		width: auto;
+		height: 40%;
+		margin-top: 20px;
+		float:none;
+	}
+	select{
+		font-size: 2.5vw;
+	}
+	div#sokStudie{
+		height: auto;
+		width: 40%;
+		background-color: #191919;
+		border-radius: 10px;
+		padding: 20px;
+		box-sizing:border-box;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	div#sokInteresse{
+		height: auto;
+		width: 40%;
+		background-color: #191919;
+		border-radius: 10px;
+		padding: 20px;
+		box-sizing: border-box;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+@media screen and (max-width: 450px){
+	h1.overskrift {
+		margin-top: 30px;
+		margin-bottom: 20px;
+		text-align: center;
+		font-size: 22px;
+	}
+	div#hovedramme{
+		height: 500px;
+		width: auto;
+		margin-left: 15px;
+		margin-right: 20px;
+		text-align: center;
+	}
+	div.resultatRamme{
+		margin-left: 15px;
+		margin-right: 20px;
+	}
+	div#rammeTekstBilde{
+		display:none;
+	}
+	div#funksjonsRamme{
+		height: auto;
+		width: auto;
+	}
+	div#tekstramme{
+		display:none;
+	}
+	p.sokTekst{
+		display:none;
+	}
+	p.sokTekstInfo{
+		display: none;
+	}
+	h3#vw{
+		font-size: 6vw;
+	}
+	h2.sokHeader{
+		display:none;
+	}
+	div#sokStudie{
+		height: 215px;
+		width: 90%;
+		margin-top: 10px;
+		margin-left: 10px;
+		float:none;
+	}
+	div#sokInteresse{
+		height: 215px;
+		width: 90%;
+		margin-top: 10px;
+		margin-left: 10px;
+		float:none;
+	}
+	input.tekst {
+		width: 140px;
+	}
+	select{
+		background-color: orange;
+		border: none;
+		color: white;
+		padding: 10px 10px;
+		border-radius:20px;
+		margin-top: 20px;
+		display: inline-block;
+		font-size: 16px;
+		float:left;
+		cursor:pointer;
+	}
+	table, thead, tbody, th, td, tr {
+		display: block;
+		margin-left: -2px;
+	}
+	td{
+		margin-bottom: 5px;
+	}
+
+}

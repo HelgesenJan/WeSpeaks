@@ -1,0 +1,270 @@
+/*Denne siden er sist endret 22.05.2018 av Hamta og Ketil
+Denne siden ble kontrollert 01.06.2018 av Jan*/
+
+h1.overskrift {
+    margin: 20px;
+    font-size: 32px;
+    }
+
+.overskrift	{
+			font-family: arial, sans-serif;
+			margin: 20px;
+			font-size: 32px;
+			}
+div#profilmeny{
+	padding: 6px;
+	border-radius: 4px;
+	background-color: #323232;
+}
+button.profilKnapper {
+	background-color: grey;
+	border: 0;
+	border-radius: 0.2em;
+	color: #ffffff;
+	padding: 7px 16px;
+}
+fieldset#box1{
+	background-color: #353f40;
+	font-family: arial, sans-serif;
+	border-radius: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: inline-block;
+	-webkit-appearance: none;
+    vertical-align: -webkit-baseline-middle;   
+	height: 200px;
+}
+
+fieldset#box2{
+	background-color: #353f40;
+	font-family: arial, sans-serif;
+	border-radius: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: inline-block;
+	-webkit-appearance: none;
+    vertical-align: top;   
+	height: 200px;
+}
+
+fieldset#box3{
+	background-color: #353f40;
+	font-family: arial, sans-serif;
+	border-radius: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: inline-block;
+	-webkit-appearance: none;
+    vertical-align: top;   
+	height: 150px;
+	width: 250px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 50px;
+  height: 24px;
+  
+}
+
+.switch input {display:none;}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ff6600;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/*  sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.bekreftKnapp {
+    background-color: grey;
+    border: 0;
+    border-radius: 0.2em;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 22px;
+	background-color: orange;
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	margin-left: 20px; 
+	margin-bottom: 20px;
+}
+.slettKonto	{
+	background-color: grey;
+    border: 0;
+    border-radius: 0.2em;
+    color: brown;
+    font-size: 20px;
+    padding: 10px 22px;
+	background-color: orange;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 850px){
+div#profilmeny{
+	margin-left: 35px;
+	max-width: 420px;
+}	
+button.profilKnapper {
+	font-size: 14px;
+}
+legend {
+	font-size: 27px;
+}
+fieldset#box1{
+	width: 325px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+fieldset#box2{
+	width: 325px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+fieldset#box3{
+	margin-left: 20px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	margin-right: 20px;
+	}
+fieldset#profilRamme{
+	border-radius: 20px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	margin-right: 20px;
+	display: inline-block;
+	width: auto;
+	height: auto;
+}
+}
+@media screen and (min-width: 450px) and (max-width: 850px) {
+div#profilmeny{
+	margin-left: 15px;
+	max-width: 400px;
+}	
+button.profilKnapper {
+	font-size: 13px;
+}
+legend {
+	font-size: 24px;
+}
+fieldset#box1{
+	width: 300px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+fieldset#box2{
+	width: 300px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+fieldset#box3{
+	margin-left: 20px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	margin-right: 20px;
+	}
+fieldset#profilRamme{
+	border-radius: 20px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+	margin-right: 20px;
+	display: inline-block;
+	width: auto;
+	height: auto;
+}
+}
+
+@media screen and (max-width: 450px){
+legend {
+	font-size: 20px;
+}
+fieldset#box1{
+	width: 250px;
+	margin-left: 3px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	margin-right: 3px;
+}
+
+fieldset#box2{
+	width: 250px;
+	margin-left: 3px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	margin-right: 3px;
+}
+fieldset#box3{
+	margin-left: 3px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	margin-right: 3px;
+	}
+fieldset#profilRamme{
+	border-radius: 20px;
+	width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.bekreftKnapp {
+	margin-left: auto;
+	margin-right: auto;
+	}
+}

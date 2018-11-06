@@ -1,0 +1,129 @@
+/*Denne siden er sist endret 14.05.2018 av Ole
+Denne siden ble kontrollert 01.06.2018 av Hamta*/
+
+div#container{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	background-color: #353f40;
+	border: 1px solid white;
+	padding: 20px;
+	height: 610px;
+}
+div#innhold{
+	height: 100%;
+	width: 100%;
+	}
+div#venstreInnhold{
+	background-color: #4c4c4c;
+	border: 1px solid white;
+	margin-top: -1px;
+	margin-left: -1px;
+	}
+div#hoyreInnhold{
+	color: black;
+	background-color: white;
+	border-radius: 3px;
+	}
+div#hoyreInnhold p{
+	margin: 10px;
+	}
+div#overskrift{
+	height: 7%;
+	}
+h1#innboks	{
+	text-align: center;
+	background-color: black;
+	border: 1px solid white;
+	margin-top: -1px;
+	margin-left: -1px;
+	margin-right: -1px;
+	}
+iframe#meldingsVisning{
+	color: black;
+	width: 99%;
+	height: 99%;
+	overflow: none;
+	}
+tr.Data{
+	background-color: white;
+	color: black;
+	height: 100px;
+	cursor: pointer;
+	}
+td.tabellPadding{
+	padding-left: 10px;
+	}
+
+	
+/* PC Styling */
+@media screen and (min-width: 850px){
+div#container{
+	width: 60%;
+	min-width: 700px;
+	}
+div#venstreInnhold{
+	height: 100%;
+	width: 25%;
+	float: left;
+	}
+div#hoyreInnhold{
+	height: 100%;
+	width: 74%;
+	float: right;
+	}
+h1#innboks{
+	font-size: 35px;
+	}
+div#tabell{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 93%;
+	}
+table#tabellen{
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	}
+p#Tilbakemelding{
+	margin: 10px;
+	}
+div#responsivTabell{
+	display: none;
+	}
+}
+
+
+/* Nettbrett og mobil styling */
+@media screen and (min-width: 0px) and (max-width: 850px) {
+h1#innboks{
+	font-size: 30px;
+	}
+div#responsivTabell{
+	overflow-y: hidden;
+	overflow-x: scroll;
+	}
+div#venstreInnhold{
+	width: 100%;
+	margin-bottom: 15px;
+	}
+div#hoyreInnhold{
+	height: 70%;
+	width: 100%;
+	}
+td.tabellPadding{
+	border: 1px solid black;
+	padding-left: 20px;
+	padding-right: 20px;
+	min-width: 130px;
+	}
+table#responsivTabellen{
+	overflow-y: hidden;
+	overflow-x: scroll;
+	}
+div#tabell{
+	display: none;
+	}
+}
+

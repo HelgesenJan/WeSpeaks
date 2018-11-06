@@ -1,0 +1,131 @@
+/*Denne siden er sist endret 17.05.2018 av Ole
+Denne siden ble kontrollert 01.06.2018 av Ketil*/
+
+/*Global styling*/
+div#innhold{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	background-color: #353f40;
+	border: 1px solid white;
+	height: 600px;
+	}
+div#opprettNyhet{
+	height: 100%;
+	margin: 20px 50px 20px 50px;
+	}
+section.TheSection	{
+	height: 82%;
+	}
+h1#overskrift{
+	background-color: black;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 32px;
+	}
+fieldset#Foresporsel{
+	width: 250px;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #4c4c4c;
+	padding: 5px;
+	}
+textarea#nyheten{
+	resize: none;
+	width: 100%;
+	height: 300px;
+	}
+input#overskriften{
+	margin-bottom: 20px;
+	}
+input.tekst, textarea.tekst{
+	padding: 6px;
+	border-radius: 4px;
+	}
+input#knapp {
+	float: right;
+	margin-top: 20px;
+	margin-right: 3px;
+	border-radius: 5px;
+	background-color: orange;
+	}
+label.byttLabel {
+	display: inline-block;
+	}
+input.knapp:hover{
+	background-color: #ff8003;
+	}
+input.knapp:focus {
+	background-color: #FFFF99;
+	}
+input.knapp {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	padding: 10px;
+	font-weight: 700;
+	}
+
+
+/* PC Styling */
+@media screen and (min-width: 850px){
+div#innhold{
+	max-width: 800px;
+	min-width: 600px;
+	width: 100%;
+	}
+label.byttLabel {
+	font-size: 24px;
+	margin-bottom: 10px;
+	}
+input#overskriften{
+	width: 100%;
+	max-width: 400px;
+	}
+}
+
+
+/* Nettbrett styling */
+@media screen and (min-width: 450px) and (max-width: 850px) {
+div#innhold{
+	width: 90%;
+	min-width: 400px;
+	}
+input.tekst	{
+	margin-top: 10px;
+	padding: 6px;
+	border-radius: 4px;
+	font-size: 14px;
+	}
+input.knapp {
+	padding: 7px;
+	}
+label.byttLabel {
+	font-size: 24px;
+	margin-bottom: 10px;
+	}
+input#overskriften{
+	width: 70%;
+	}
+}
+
+
+/* Mobil styling */
+@media screen and (max-width: 449px){
+div#innhold{
+	width: 90%;
+	min-width: 280px;
+	}
+label.byttLabel {
+	font-size: 18px;
+	margin-bottom: 10px;
+	}
+input.knapp {
+	margin-top: 25px;
+	margin-bottom: 20px;
+	float: left;
+	padding: 5px;
+	}
+}

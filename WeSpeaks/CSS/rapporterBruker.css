@@ -1,0 +1,76 @@
+/*Denne siden er sist endret 14.05.2018 av Hamta og Ketil
+Denne siden ble kontrollert 01.06.2018 av Ole*/
+div#container{
+	background-color: #323232;
+	border: 3px solid white;
+	border-radius: 5px;
+	height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+label#bruker{
+	display: inline-block;
+	font-size: 18px;
+	padding: 4px;
+	margin-left: 10px;
+	margin-top: 10px;
+	}
+input#navnet{
+	font-size: 18px;
+	padding: 4px;
+	margin-bottom: 25px;
+	margin-top: 10px;
+	border-radius: 4px;
+	}
+textarea#teksten{
+	resize: none;
+	height: 250px;
+	margin-bottom: 15px;
+	border-radius: 4px;
+	margin-left: 10px;
+	}
+button.knapp{
+	padding: 7px;
+	margin-right: 25px;
+	}
+h1	{
+	background-color: black;
+	text-align: center;
+	}
+p	{
+	margin-left: 10px;
+	}
+	
+@media screen and (min-width: 850px){
+div#container{
+	width: 620px;
+	height: 450px;
+}	
+textarea#teksten{
+	width: 600px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+div#container{
+	width: 420px;
+	height: 450px;
+}	
+textarea#teksten{
+	width: 400px;
+	}
+}
+
+@media screen and (max-width: 450px){
+div#container{
+	width: 280px;
+	height: 570px;
+}	
+textarea#teksten{
+	width: 260px;
+	}
+input#navnet{
+	margin-left: 10px;
+}
